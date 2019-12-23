@@ -39,7 +39,7 @@ class ArrayQueueDemo {
 	public int getQueue() {
 		//判断队列是否空
 		if(isEmpty())
-			throw new RuntimeException("");
+			throw new RuntimeException("队列为空");
 			//通过抛出异常处理;因为如果用-1或0等其他值代表队列为空,可能会被误认为是原本的数值.
 		front++;	//front后移
 		return arr[front];	
